@@ -1,8 +1,14 @@
 {
   "name": "italodr",
   "description": "personal website",
-  "version": "0.0.1",
-  "keywords": ["italodr", "resume", "cv", "react", "create-react-app"],
+  "version": "0.0.2",
+  "keywords": [
+    "italodr",
+    "resume",
+    "cv",
+    "react",
+    "create-react-app"
+  ],
   "license": "MIT",
   "private": false,
   "repository": "git@github.com:italodr/italodr.github.io.git",
