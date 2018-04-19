@@ -4,7 +4,7 @@ import { mixins as m } from 'helpers';
 
 import logo from 'assets/img/logo-italodr.svg';
 
-const HeaderContainer = styled.header`
+const Wrapper = styled.header`
   padding: ${m.space(0.75)} 0;
 `;
 
@@ -16,9 +16,10 @@ const Logo = styled.img`
 class Header extends Component {
   render() {
     return (
-      <HeaderContainer>
+      // eslint-disable-next-line
+      <Wrapper role="header">
         <Logo src={logo} alt="" />
-      </HeaderContainer>
+      </Wrapper>
     );
   }
 }

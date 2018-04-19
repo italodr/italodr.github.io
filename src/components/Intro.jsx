@@ -16,21 +16,23 @@ class Intro extends Component {
     return (
       <Container>
         <Featured>
-          I'm a proactive-tireless fullstack web developer eager to learn to develop in new
-          environments, new functionalities… new challenges! And above all, I’m always focused on
-          functional solutions that respond to specific needs.
+          I consider myself a proactive, resolute and tireless person in continuing to learn and in
+          search of continuously improvement in order to contribute with value and quality in
+          everything I do, and always focused on functional solutions that respond to specific
+          needs.
         </Featured>
         <p>
-          Originally from Peru, I’m currently living in Barcelona where I work with Runroom. There,
-          I'm head of front-end developers and enjoy working together with researchers, designers
-          and developers to create the final solutions that bring the maximum value to users and
-          turn the client's app in gold.
+          Originally from Peru, I’m currently living in Barcelona where I work with Runroom as Head
+          of front-end developers. I enjoy working together with researchers, designers and
+          developers in the endless search of the best solutions that can bring the maximum value to
+          users and turn the client's project into <i>gold</i>.
         </p>
         <p>
-          As a developer, I'm fully versatile to work in different environments and frameworks; with
-          extensive experience in frameworks, emailing and e-commerce. Agile methodologies lover,
-          and always focus in automatization and web performance, creating tools that facilitate and
-          reduce the workload of my teammates.
+          Continuous improvement is a need that helps me to constantly seek better solutions, not
+          only for the clients with whom I work, but also, and mainly, for the working life of all
+          my teammates. Analyzing and creating tools that help to automate processes, thus
+          optimizing the productivity of the teams. I also love Agile methodologies, and keep focus
+          in accessibility, automatization processes and web performance.
         </p>
       </Container>
     );

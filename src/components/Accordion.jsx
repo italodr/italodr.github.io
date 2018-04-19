@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { vars as v, mixins as m } from 'helpers';
 
 const AccordionButton = styled.button`
+  color: ${v.colors.black};
   cursor: pointer;
   display: flex;
   font-size: ${m.font(1)};
@@ -14,8 +15,12 @@ const AccordionButton = styled.button`
 `;
 
 const AccordionContent = styled.div`
+  display: none;
   font-size: ${m.font(0.75)};
-  padding: ${m.space(1)} 0;
+  padding: ${m.space(0.25)} 0 ${m.space(1)};
+  &.is-visible {
+    display: block;
+  }
 `;
 
 const AccordionWrapper = styled.li`
@@ -49,11 +54,13 @@ class Accordion extends Component {
         >
           {this.props.title} <span aria-hidden="true">{this.state.open ? '-' : '+'}</span>
         </AccordionButton>
-        {this.state.open && (
-          <AccordionContent id={`content-${this.props.index}`} aria-hidden={!this.state.open}>
-            {this.props.children}
-          </AccordionContent>
-        )}
+        <AccordionContent
+          id={`content-${this.props.index}`}
+          className={this.state.open && 'is-visible'}
+          aria-hidden={!this.state.open}
+        >
+          {this.props.children}
+        </AccordionContent>
       </AccordionWrapper>
     );
   }

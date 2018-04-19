@@ -208,6 +208,7 @@ h1 {
 
 h2 {
   font-size: 1.25rem;
+  margin: 0 0 var(--gap);
 }
 
 h3 {
@@ -221,12 +222,17 @@ strong {
   color: var(--color-black);
 }
 
+i {
+  font-style: italic;
+}
+
 p {
   font-size: 1rem;
   margin: 0 0 var(--gap);
 }
 
 a {
+  font-size: 1rem;
   color: var(--color-black);
 }
 

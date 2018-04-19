@@ -5,7 +5,7 @@ import { vars as v, mixins as m } from '../helpers';
 const dotsSize = 8;
 const dotsSpace = `${dotsSize * 2}px`;
 
-const DotsWrapper = styled.span`
+const Wrapper = styled.span`
   background: ${v.colors.blue};
   margin: ${m.space(0.5)} auto;
   position: relative;
@@ -39,7 +39,7 @@ const DotsWrapper = styled.span`
 
 class Dots extends Component {
   render() {
-    return <DotsWrapper aria-hidden="true" />;
+    return <Wrapper aria-hidden="true" />;
   }
 }
 

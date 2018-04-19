@@ -1,8 +1,12 @@
 {
-  "main.css": "static/css/main.bf4debb4.css",
-  "main.css.map": "static/css/main.bf4debb4.css.map",
-  "main.js": "static/js/main.279cde6b.js",
-  "main.js.map": "static/js/main.279cde6b.js.map",
+  "main.css": "static/css/main.cb47188e.css",
+  "main.css.map": "static/css/main.cb47188e.css.map",
+  "main.js": "static/js/main.4f8df1a0.js",
+  "main.js.map": "static/js/main.4f8df1a0.js.map",
+  "static/media/email.svg": "static/media/email.52bcfc94.svg",
+  "static/media/github.svg": "static/media/github.ae235e0e.svg",
+  "static/media/linkedin.svg": "static/media/linkedin.815cb65c.svg",
   "static/media/logo-italodr.svg": "static/media/logo-italodr.2a47345d.svg",
-  "static/media/profile-italo.jpg": "static/media/profile-italo.524dd94a.jpg"
+  "static/media/profile-italo.jpg": "static/media/profile-italo.524dd94a.jpg",
+  "static/media/twitter.svg": "static/media/twitter.ec601595.svg"
 }

@@ -29,19 +29,15 @@ const Subtitle = styled.h2`
   margin: 0 0 ${m.space(1.5)};
 `;
 
-const JsonLd = ({ data }) => (
-  <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }} />
-);
-
 class ProfileComponent extends Component {
   render() {
     return (
       <Profile>
-        <h1>Italo Devoto Ramella</h1>
+        <h1>Hi, I'm Italo</h1>
         <Subtitle>
           Fullstack web <s>developer</s> alchemist
         </Subtitle>
-        <JsonLd data={data} />
+        <script type="application/ld+json">{JSON.stringify(data)}</script>
       </Profile>
     );
   }
