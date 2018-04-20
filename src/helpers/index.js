@@ -9,19 +9,12 @@ export const media = {
 };
 
 export const vars = {
-  layout: {
-    gap: 20,
-    maxContentWidth: 640
-  },
+  layout: { gap: 20, maxContentWidth: 640 },
   font: {
     family: 'droid-sans-mono, monospace',
     weight: 400,
-    size: {
-      base: 16
-    },
-    lineHeight: {
-      base: 24
-    }
+    size: { base: 16 },
+    lineHeight: { base: 24 }
   },
   colors: {
     black: '#000',
@@ -29,7 +22,8 @@ export const vars = {
     blackLighter: 'rgba(0, 0, 0, .25)',
     green: '#6a926a',
     blue: '#00929f',
-    mint: '#35a492'
+    mint: '#35a492',
+    link: '#00626B'
   }
 };
 

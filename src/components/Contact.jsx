@@ -18,7 +18,7 @@ const Item = styled.li`
 `;
 
 const AccountName = styled.span`
-  color: ${v.colors.blue};
+  color: ${v.colors.link};
 `;
 
 class Intro extends Component {

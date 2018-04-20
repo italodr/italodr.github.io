@@ -13,7 +13,7 @@ class Footer extends Component {
   render() {
     return (
       // eslint-disable-next-line
-      <Wrapper role="footer">
+      <Wrapper aria-hidden="true">
         <Dots />
       </Wrapper>
     );

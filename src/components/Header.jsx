@@ -21,7 +21,7 @@ class Header extends Component {
   render() {
     return (
       // eslint-disable-next-line
-      <Wrapper role="header">
+      <Wrapper aria-hidden="true">
         <Logo src={logo} alt="" />
       </Wrapper>
     );
