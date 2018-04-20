@@ -2,7 +2,8 @@
   /*
    * Typography
    * ======================================================================== */
-  --font-family-base: 'Lato', Helvetica, Arial, sans-serif;
+  --font-family-base: 'Lato', sans-serif;
+  --font-family-fallback: Helvetica, Arial, sans-serif;
   --font-size-base: 16px;
   --font-weight-base: 400;
   --line-height-base: 1.5;
@@ -199,6 +200,11 @@ body {
 
 body,
 button {
+  font-family: var(--font-family-fallback);
+}
+
+.fonts-loaded body,
+.fonts-loaded button {
   font-family: var(--font-family-base);
 }
 
