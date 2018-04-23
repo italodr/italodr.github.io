@@ -9,13 +9,13 @@ import Profile from 'components/Profile';
 
 const Main = styled.main`
   margin: 0 auto;
-  max-width: ${v.layout.maxContentWidth}px;
+  max-width: ${v.maxContentWidth}px;
 `;
 
 class Layout extends Component {
   render() {
     return (
-      <Main role="main">
+      <Main id="main" role="main">
         <Profile />
         <Intro />
         <Skills />

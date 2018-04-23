@@ -9,26 +9,28 @@ export const media = {
 };
 
 export const vars = {
-  layout: { gap: 20, maxContentWidth: 640 },
+  maxContentWidth: 640,
   font: {
-    family: 'droid-sans-mono, monospace',
+    family: {
+      base: '"Lato", sans-serif',
+      fallback: 'Helvetica, Arial, sans-serif'
+    },
+    loadedClass: 'fonts-loaded',
     weight: 400,
     size: { base: 16 },
-    lineHeight: { base: 24 }
+    lineHeight: { base: 1.5 }
   },
   colors: {
+    white: '#fff',
     black: '#000',
-    blackLight: 'rgba(0, 0, 0, .5)',
+    blackLight: '#595959',
     blackLighter: 'rgba(0, 0, 0, .25)',
     green: '#6a926a',
     blue: '#00929f',
     mint: '#35a492',
+    secondary: '#1f6156',
     link: '#00626B'
   }
 };
 
-export const mixins = {
-  space: n => `${vars.layout.gap * n / vars.font.size.base}rem`,
-  font: n => `${vars.font.size.base * n / vars.font.size.base}rem`,
-  vr: n => `${vars.font.lineHeight.base * n / vars.font.size.base}rem`
-};
+export const space = n => `${vars.font.lineHeight.base * n}rem`;

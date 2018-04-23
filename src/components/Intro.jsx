@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import { vars as v, mixins as m } from 'helpers';
+import { vars as v, space } from 'helpers';
 
 const Container = styled.section`
-  margin: 0 0 ${m.space(2)};
+  margin: 0 0 ${space(2)};
 `;
 
 const Featured = styled.p`
-  font-size: ${m.font(1.15)};
+  font-size: 1.15rem;
   color: ${v.colors.black};
 `;
 

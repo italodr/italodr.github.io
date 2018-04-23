@@ -3,10 +3,10 @@ import styled from 'styled-components';
 
 import Accordion from 'components/Accordion';
 import skills from 'data/skills.json';
-import { mixins as m } from 'helpers';
+import { space } from 'helpers';
 
 const Wrapper = styled.ul`
-  margin: 0 0 ${m.space(2)};
+  margin: 0 0 ${space(2)};
 `;
 
 class Footer extends Component {

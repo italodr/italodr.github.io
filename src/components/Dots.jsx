@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import { vars as v, mixins as m } from '../helpers';
+import { vars as v, space } from '../helpers';
 
 const dotsSize = 8;
 const dotsSpace = `${dotsSize * 2}px`;
 
 const Wrapper = styled.span`
   background: ${v.colors.blue};
-  margin: ${m.space(0.5)} auto;
+  margin: ${space(0.5)} auto;
   position: relative;
 
   &,

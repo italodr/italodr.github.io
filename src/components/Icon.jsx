@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import { mixins as m, vars as v } from 'helpers';
+import { space, vars as v } from 'helpers';
 
 const Wrapper = styled.span`
   display: inline-block;
@@ -9,7 +9,7 @@ const Wrapper = styled.span`
   img {
     display: block;
     height: 1rem;
-    margin: 0 ${m.space(0.5)} 0 0;
+    margin: 0 ${space(0.5)} 0 0;
     width: 1rem;
   }
 `;

@@ -3,18 +3,18 @@ import styled from 'styled-components';
 
 import Icon from 'components/Icon';
 
-import { mixins as m, vars as v } from 'helpers';
+import { space, vars as v } from 'helpers';
 import iconEmail from 'assets/img/sprites/email.svg';
 import iconTwitter from 'assets/img/sprites/twitter.svg';
 import iconGithub from 'assets/img/sprites/github.svg';
 import iconLinkedin from 'assets/img/sprites/linkedin.svg';
 
 const Wrapper = styled.ul`
-  margin: 0 0 ${m.space(2)};
+  margin: 0 0 ${space(2)};
 `;
 
 const Item = styled.li`
-  margin: 0 0 ${m.space(1)};
+  margin: 0 0 ${space(0.5)};
 `;
 
 const AccountName = styled.span`

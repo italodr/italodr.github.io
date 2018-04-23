@@ -1,23 +1,28 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import { vars as v, mixins as m } from 'helpers';
+import { vars as v, space } from 'helpers';
 
 const AccordionButton = styled.button`
   color: ${v.colors.black};
   cursor: pointer;
   display: flex;
-  font-size: ${m.font(1)};
+  font-family: ${v.font.family.fallback};
+  font-size: 1rem;
   justify-content: space-between;
   position: relative;
   text-align: left;
   width: 100%;
-  padding: ${m.space(0.5)} 0;
+  padding: ${space(0.5)} 0;
+
+  html.${v.font.loadedClass} & {
+    font-family: ${v.font.family.base};
+  }
 `;
 
 const AccordionContent = styled.div`
   display: none;
-  font-size: ${m.font(0.75)};
-  padding: ${m.space(0.25)} 0 ${m.space(1)};
+  font-size: 0.75rem;
+  padding: ${space(0.25)} 0 ${space(1)};
   &.is-visible {
     display: block;
   }

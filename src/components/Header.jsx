@@ -1,16 +1,16 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import { media, mixins as m } from 'helpers';
+import { media, space } from 'helpers';
 
 import logo from 'assets/img/logo-italodr.svg';
 
 const Wrapper = styled.header`
-  padding: ${m.space(0.75)} 0 ${m.space(1.5)};
+  padding: ${space(0.75)} 0 ${space(1.5)};
 `;
 
 const Logo = styled.img`
   display: block;
-  height: ${m.vr(1.5)};
+  height: ${space(1.5)};
   margin: 0 auto;
   ${media.tablet`
     margin: 0;

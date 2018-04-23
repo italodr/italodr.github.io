@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import { mixins as m } from 'helpers';
+import { space } from 'helpers';
 
 import avatar from 'assets/img/profile-italo.jpg';
 
@@ -26,7 +26,7 @@ const Profile = styled.section`
 `;
 
 const Subtitle = styled.h2`
-  margin: 0 0 ${m.space(1.5)};
+  margin: 0 0 ${space(1.5)};
 `;
 
 class ProfileComponent extends Component {
@@ -35,7 +35,8 @@ class ProfileComponent extends Component {
       <Profile>
         <h1>Hi, I'm Italo</h1>
         <Subtitle>
-          Fullstack web <s>developer</s> alchemist
+          Fullstack web <s>developer</s>
+          <span aria-hidden="true"> alchemist</span>
         </Subtitle>
         <script type="application/ld+json">{JSON.stringify(data)}</script>
       </Profile>

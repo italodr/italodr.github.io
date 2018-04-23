@@ -2,11 +2,11 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 
 import Dots from 'components/Dots';
-import { mixins as m } from 'helpers';
+import { space } from 'helpers';
 
 const Wrapper = styled.footer`
-  margin: ${m.space(2)} 0 0;
-  padding: ${m.space(0.5)} 0;
+  margin: ${space(2)} 0 0;
+  padding: ${space(0.5)} 0;
 `;
 
 class Footer extends Component {
