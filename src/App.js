@@ -7,6 +7,7 @@ import Footer from 'components/Footer';
 import Layout from 'components/Layout';
 
 import { vars as v } from 'helpers/index';
+import skipLinks from 'data/skip-links.json';
 
 class App extends Component {
   constructor() {
@@ -24,7 +25,9 @@ class App extends Component {
   render() {
     return (
       <div>
-        <SkipLink label="Skip to main content (Press enter)" target="#main" />
+        {skipLinks.map((item, index) => (
+          <SkipLink key={`skip${index.toString()}`} label={item.title} target={item.target} />
+        ))}
         <Header />
         <Layout />
         <Footer />

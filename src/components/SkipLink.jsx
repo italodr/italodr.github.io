@@ -6,9 +6,8 @@ const Wrapper = styled.a`
   background: ${v.colors.black};
   border: 0;
   color: ${v.colors.white};
-  display: none;
   font-size: 1.25rem;
-  left: 0;
+  left: -120%;
   margin: ${space(1)} 0;
   padding: ${space(0.25)} ${space(0.5)};
   position: absolute;
@@ -18,7 +17,7 @@ const Wrapper = styled.a`
 
   &:focus,
   &:active {
-    display: block;
+    left: 10%;
   }
 `;
 

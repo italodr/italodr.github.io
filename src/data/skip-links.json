@@ -1,0 +1,10 @@
+[
+  {
+    "title": "Skip to main content (Press enter)",
+    "target": "#main"
+  },
+  {
+    "title": "Skip to contact info (Press enter)",
+    "target": "#contact"
+  }
+]
