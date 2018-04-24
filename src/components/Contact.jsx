@@ -24,7 +24,7 @@ const AccountName = styled.span`
 class Intro extends Component {
   render() {
     return (
-      <div>
+      <div id="contact">
         <h2>Contact</h2>
         <Wrapper>
           <Item>
