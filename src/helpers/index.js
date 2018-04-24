@@ -34,3 +34,4 @@ export const vars = {
 };
 
 export const space = n => `${vars.font.lineHeight.base * n}rem`;
+export const pxs = n => vars.font.size.base * n;
