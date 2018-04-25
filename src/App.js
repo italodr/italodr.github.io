@@ -1,13 +1,19 @@
 import React, { Component } from 'react';
 import FontFaceObserver from 'fontfaceobserver';
+import styled from 'styled-components';
 
 import SkipLink from 'components/SkipLink';
+import Bar from 'components/Bar';
 import Header from 'components/Header';
 import Footer from 'components/Footer';
 import Layout from 'components/Layout';
 
-import { vars as v } from 'helpers/index';
+import { space, vars as v } from 'helpers/index';
 import skipLinks from 'data/skip-links.json';
+
+const Wrapper = styled.div`
+  padding: ${space(0.25)} 0 0;
+`;
 
 class App extends Component {
   constructor() {
@@ -24,14 +30,15 @@ class App extends Component {
 
   render() {
     return (
-      <div>
+      <Wrapper>
         {skipLinks.map((item, index) => (
           <SkipLink key={`skip${index.toString()}`} label={item.title} target={item.target} />
         ))}
+        <Bar />
         <Header />
         <Layout />
         <Footer />
-      </div>
+      </Wrapper>
     );
   }
 }
