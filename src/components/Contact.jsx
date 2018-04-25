@@ -1,13 +1,9 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 
-import Icon from 'components/Icon';
+import Vector from 'components/Vectors';
 
-import { space, vars as v } from 'helpers';
-import iconEmail from 'assets/img/sprites/email.svg';
-import iconTwitter from 'assets/img/sprites/twitter.svg';
-import iconGithub from 'assets/img/sprites/github.svg';
-import iconLinkedin from 'assets/img/sprites/linkedin.svg';
+import { space, pxs, vars as v } from 'helpers';
 
 const Wrapper = styled.ul`
   margin: 0 0 ${space(2)};
@@ -28,7 +24,7 @@ class Intro extends Component {
         <h2>Contact</h2>
         <Wrapper>
           <Item>
-            <Icon icon={iconEmail} />
+            <Vector.Email size={pxs(1)} aria-hidden="true" />
             <a
               href="mailto:italodr@gmail.com"
               title="Email me"
@@ -39,7 +35,7 @@ class Intro extends Component {
             </a>
           </Item>
           <Item>
-            <Icon icon={iconTwitter} />
+            <Vector.Twitter size={pxs(1)} aria-hidden="true" />
             <a
               href="https://twitter.com/@italo_dr"
               title="Twitter account"
@@ -50,7 +46,7 @@ class Intro extends Component {
             </a>
           </Item>
           <Item>
-            <Icon icon={iconGithub} />
+            <Vector.Github size={pxs(1)} aria-hidden="true" />
             <a
               href="https://github.com/italodr"
               title="Github account"
@@ -61,7 +57,7 @@ class Intro extends Component {
             </a>
           </Item>
           <Item>
-            <Icon icon={iconLinkedin} />
+            <Vector.Linkedin size={pxs(1)} aria-hidden="true" />
             <a
               href="https://www.linkedin.com/in/italodr/"
               title="Linkedin account"
