@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import registerServiceWorker from 'registerServiceWorker';
 
 import App from './App';
-import 'helpers/crp-styles';
+import 'styles/crp.styles';
 
 ReactDOM.render(<App />, document.getElementById('root'));
 registerServiceWorker();

@@ -1,5 +1,5 @@
 import { injectGlobal } from 'styled-components';
-import { vars as v } from 'helpers/index';
+import theme from 'styles/theme.styles';
 
 injectGlobal`
 @font-face {
@@ -102,32 +102,32 @@ body {
 }
 
 body {
-  color: ${v.colors.blackLight};
+  color: ${theme.default.COLOR_BLACKLIGHT};
   margin: 0;
   overflow-x: hidden;
-  padding: 0 ${v.font.lineHeight.base}rem;
+  padding: 0 ${theme.default.FONT_LINEHEIGHT_BASE}rem;
   font-size: 16px;
-  font-weight: ${v.font.weight.base};
-  line-height: ${v.font.lineHeight.base};
+  font-weight: ${theme.default.FONT_WEIGHT_BASE};
+  line-height: ${theme.default.FONT_LINEHEIGHT_BASE};
 }
 
 body {
-  font-family: ${v.font.family.fallback};
+  font-family: ${theme.default.FONT_FAMILY_FALLBACK};
 
-  html.${v.font.loadedClass} & {
-      font-family: ${v.font.family.base};
+  html.${theme.default.FONT_LOADED_CLASS} & {
+      font-family: ${theme.default.FONT_FAMILY_BASE};
   }
 }
 
 h1 {
-  color: ${v.colors.black};
+  color: ${theme.default.COLOR_BLACK};
   font-size: 2rem;
 }
 
 h2 {
-  color: ${v.colors.secondary};
+  color: ${theme.default.COLOR_SECONDARY};
   font-size: 1.25rem;
-  margin: 0 0 ${v.font.lineHeight.base}rem;
+  margin: 0 0 ${theme.default.FONT_LINEHEIGHT_BASE}rem;
 }
 
 h3 {
@@ -138,7 +138,7 @@ h3 {
 
 b,
 strong {
-  color: ${v.colors.black};
+  color: ${theme.default.COLOR_BLACK};
 }
 
 i {
@@ -147,12 +147,12 @@ i {
 
 p {
   font-size: 1rem;
-  margin: 0 0 ${v.font.lineHeight.base}rem;
+  margin: 0 0 ${theme.default.FONT_LINEHEIGHT_BASE}rem;
 }
 
 a {
   font-size: 1rem;
-  color: ${v.colors.black};
+  color: ${theme.default.COLOR_BLACK};
 }
 
 @media only screen and (min-width: 480px) {

@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import { media, space, pxs } from 'helpers';
 
 import Vector from 'components/Vectors';
+import { media, space, pxs } from 'helpers';
 
 const Wrapper = styled.header`
   padding: ${space(0.75)} 0 ${space(1.5)};

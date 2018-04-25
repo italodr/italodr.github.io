@@ -8,8 +8,9 @@ import Header from 'components/Header';
 import Footer from 'components/Footer';
 import Layout from 'components/Layout';
 
-import { space, vars as v } from 'helpers/index';
 import skipLinks from 'data/skip-links.json';
+import theme from 'styles/theme.styles';
+import { space } from 'helpers';
 
 const Wrapper = styled.div`
   padding: ${space(0.25)} 0 0;
@@ -21,7 +22,7 @@ class App extends Component {
 
     Promise.all([new FontFaceObserver('Lato')])
       .then(() => {
-        document.documentElement.classList.add(v.font.loadedClass);
+        document.documentElement.classList.add(theme.LOADED_CLASS);
       })
       .catch(err => {
         // console.error('Failed to load fonts!', err);

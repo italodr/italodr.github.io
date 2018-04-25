@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import { vars as v, space } from 'helpers/index';
+
+import theme from 'styles/theme.styles';
+import { space } from 'helpers';
 
 const Wrapper = styled.a`
-  background: ${v.colors.black};
+  background: ${theme.default.COLOR_BLACK};
   border: 0;
-  color: ${v.colors.white};
+  color: ${theme.default.COLOR_WHITE};
   font-size: 1.25rem;
   left: -120%;
   margin: ${space(1)} 0;

@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 
-import { space, vars as v } from 'helpers/index';
+import theme from 'styles/theme.styles';
+import { space } from 'helpers';
 
 const Item = styled.svg.attrs({
   resheight: props => props.size || props.height,
@@ -17,7 +18,7 @@ const Icon = Item.extend`
   margin: 0 ${space(0.5)} 0 0;
 
   path {
-     fill: ${v.colors.blackLight};
+     fill: ${theme.default.COLOR_BLACKLIGHT};
   }
 `;
 

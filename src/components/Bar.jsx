@@ -1,12 +1,19 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import { space, vars as v } from 'helpers';
+
+import theme from 'styles/theme.styles';
+import { space } from 'helpers';
 
 const Wrapper = styled.div`
   -webkit-animation: GradientBar 12s ease infinite;
   -moz-animation: GradientBar 12s ease infinite;
   animation: GradientBar 12s ease infinite;
-  background: linear-gradient(270deg, ${v.colors.green}, ${v.colors.blue}, ${v.colors.mint});
+  background: linear-gradient(
+    270deg,
+    ${theme.default.COLOR_GREEN},
+    ${theme.default.COLOR_BLUE},
+    ${theme.default.COLOR_MINT}
+  );
   background-size: 600% 600%;
   height: ${space(0.25)};
   left: 0;

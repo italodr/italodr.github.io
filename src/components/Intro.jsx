@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import { vars as v, space } from 'helpers';
+
+import theme from 'styles/theme.styles';
+import { space } from 'helpers';
 
 const Container = styled.section`
   margin: 0 0 ${space(2)};
@@ -8,7 +10,7 @@ const Container = styled.section`
 
 const Featured = styled.p`
   font-size: 1.15rem;
-  color: ${v.colors.black};
+  color: ${theme.default.COLOR_BLACK};
 `;
 
 class Intro extends Component {

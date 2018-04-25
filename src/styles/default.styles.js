@@ -1,0 +1,18 @@
+export default {
+  MAX_CONTENT_WIDTH: 640,
+  FONT_FAMILY_BASE: '"Lato", sans-serif',
+  FONT_FAMILY_FALLBACK: 'Helvetica, Arial, sans-serif',
+  FONT_LOADED_CLASS: 'fonts-loaded',
+  FONT_WEIGHT_BASE: 400,
+  FONT_SIZE_BASE: 16,
+  FONT_LINEHEIGHT_BASE: 1.5,
+  COLOR_WHITE: '#fff',
+  COLOR_BLACK: '#000',
+  COLOR_BLACKLIGHT: '#595959',
+  COLOR_BLACKLIGHTER: 'rgba(0, 0, 0, .25)',
+  COLOR_GREEN: '#6a926a',
+  COLOR_BLUE: '#00929f',
+  COLOR_MINT: '#35a492',
+  COLOR_SECONDARY: '#1f6156',
+  COLOR_LINK: '#00626B'
+};

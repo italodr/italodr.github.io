@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 import { space } from 'helpers';
 
-import avatar from 'assets/img/profile-italo.jpg';
+import avatar from 'images/profile-italo.jpg';
 
 const data = {
   '@context': 'http://schema.org',

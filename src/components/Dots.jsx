@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import { vars as v, space } from '../helpers';
+
+import theme from 'styles/theme.styles';
+import { space } from 'helpers';
 
 const dotsSize = 8;
 const dotsSpace = `${dotsSize * 2}px`;
 
 const Wrapper = styled.span`
-  background: ${v.colors.blue};
+  background: ${theme.default.COLOR_BLUE};
   margin: ${space(0.5)} auto;
   position: relative;
 
@@ -27,12 +29,12 @@ const Wrapper = styled.span`
   }
 
   &::before {
-    background: ${v.colors.green};
+    background: ${theme.default.COLOR_GREEN};
     right: ${dotsSpace};
   }
 
   &::after {
-    background: ${v.colors.mint};
+    background: ${theme.default.COLOR_MINT};
     left: ${dotsSpace};
   }
 `;

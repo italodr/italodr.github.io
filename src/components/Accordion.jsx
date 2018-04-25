@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 
-import { vars as v, space } from 'helpers';
+import theme from 'styles/theme.styles';
+import { space } from 'helpers';
 
 const AccordionButton = styled.button`
-  color: ${v.colors.black};
+  color: ${theme.default.COLOR_BLACK};
   cursor: pointer;
   display: flex;
-  font-family: ${v.font.family.fallback};
+  font-family: ${theme.default.FONT_FAMILY_FALLBACK};
   font-size: 1rem;
   justify-content: space-between;
   position: relative;
@@ -15,8 +16,8 @@ const AccordionButton = styled.button`
   width: 100%;
   padding: ${space(0.5)} 0;
 
-  html.${v.font.loadedClass} & {
-    font-family: ${v.font.family.base};
+  html.${theme.default.FONT_LOADEDCLASS} & {
+    font-family: ${theme.default.FONT_FAMILY_BASE};
   }
 `;
 
@@ -30,7 +31,7 @@ const AccordionContent = styled.div`
 `;
 
 const AccordionWrapper = styled.li`
-  border: solid ${v.colors.blackLighter};
+  border: solid ${theme.default.COLOR_BLACKLIGHTER};
   border-width: 0 0 1px;
   list-style: none;
 `;

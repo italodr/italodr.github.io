@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 
-import Vector from 'components/Vectors';
+import theme from 'styles/theme.styles';
+import { space, pxs } from 'helpers';
 
-import { space, pxs, vars as v } from 'helpers';
+import Vector from 'components/Vectors';
 
 const Wrapper = styled.ul`
   margin: 0 0 ${space(2)};
@@ -14,7 +15,7 @@ const Item = styled.li`
 `;
 
 const AccountName = styled.span`
-  color: ${v.colors.link};
+  color: ${theme.default.COLOR_LINK};
 `;
 
 class Intro extends Component {
