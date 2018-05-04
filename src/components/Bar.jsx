@@ -16,9 +16,6 @@ const Wrapper = styled.div`
   );
   background-size: 600% 600%;
   height: ${space(0.25)};
-  left: 0;
-  position: absolute;
-  top: 0;
   width: 100%;
 
   @-webkit-keyframes GradientBar {

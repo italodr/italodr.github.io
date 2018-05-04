@@ -1,5 +1,4 @@
 import { injectGlobal } from 'styled-components';
-import theme from 'styles/theme.styles';
 
 injectGlobal`
 @font-face {
@@ -102,57 +101,17 @@ body {
 }
 
 body {
-  color: ${theme.default.COLOR_BLACKLIGHT};
-  margin: 0;
-  overflow-x: hidden;
-  padding: 0 ${theme.default.FONT_LINEHEIGHT_BASE}rem;
   font-size: 16px;
-  font-weight: ${theme.default.FONT_WEIGHT_BASE};
-  line-height: ${theme.default.FONT_LINEHEIGHT_BASE};
-}
+  font-family: 'Helvetica, Arial, sans-serif';
+  overflow-x: hidden;
 
-body {
-  font-family: ${theme.default.FONT_FAMILY_FALLBACK};
-
-  html.${theme.default.FONT_LOADED_CLASS} & {
-      font-family: ${theme.default.FONT_FAMILY_BASE};
+  html.fonts-loaded & {
+    font-family: "Lato", sans-serif;
   }
 }
 
-h1 {
-  color: ${theme.default.COLOR_BLACK};
-  font-size: 2rem;
-}
-
-h2 {
-  color: ${theme.default.COLOR_SECONDARY};
-  font-size: 1.25rem;
-  margin: 0 0 ${theme.default.FONT_LINEHEIGHT_BASE}rem;
-}
-
-h3 {
-  font-size: 0.75rem;
-  margin: 0;
-  text-transform: uppercase;
-}
-
-b,
-strong {
-  color: ${theme.default.COLOR_BLACK};
-}
-
-i {
-  font-style: italic;
-}
-
-p {
-  font-size: 1rem;
-  margin: 0 0 ${theme.default.FONT_LINEHEIGHT_BASE}rem;
-}
-
-a {
-  font-size: 1rem;
-  color: ${theme.default.COLOR_BLACK};
+b, strong {
+  font-weight: 700;
 }
 
 @media only screen and (min-width: 480px) {

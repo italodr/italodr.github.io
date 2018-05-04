@@ -1,20 +1,51 @@
 import React, { Component } from 'react';
+import { Provider } from 'react-redux';
 import FontFaceObserver from 'fontfaceobserver';
-import styled from 'styled-components';
 
-import SkipLink from 'components/SkipLink';
-import Bar from 'components/Bar';
-import Header from 'components/Header';
-import Footer from 'components/Footer';
+import store from 'redux/store';
 import Layout from 'components/Layout';
 
-import skipLinks from 'data/skip-links.json';
-import theme from 'styles/theme.styles';
-import { space } from 'helpers';
+const FONT_LOADED_CLASS = 'fonts-loaded';
 
-const Wrapper = styled.div`
-  padding: ${space(0.25)} 0 0;
-`;
+// const Wrapper = styled(Layout)`
+//   body {
+//     color: ${theme.default.COLOR_BLACKLIGHT};
+//     font-family: ${theme.default.FONT_FAMILY_FALLBACK};
+//     font-weight: ${theme.default.FONT_WEIGHT_BASE};
+//     line-height: ${theme.default.FONT_LINEHEIGHT_BASE};
+
+//     html.${theme.default.FONT_LOADED_CLASS} & {
+//       font-family: ${theme.default.FONT_FAMILY_BASE};
+//     }
+//   }
+
+//   h1 {
+//     color: ${theme.default.COLOR_BLACK};
+//     font-size: 2rem;
+//   }
+
+//   h2 {
+//     color: ${theme.default.COLOR_SECONDARY};
+//     font-size: 1.25rem;
+//     margin: 0 0 ${theme.default.FONT_LINEHEIGHT_BASE}rem;
+//   }
+
+//   h3 {
+//     font-size: 0.75rem;
+//     margin: 0;
+//     text-transform: uppercase;
+//   }
+
+//   p {
+//     font-size: 1rem;
+//     margin: 0 0 ${theme.default.FONT_LINEHEIGHT_BASE}rem;
+//   }
+
+//   a {
+//     font-size: 1rem;
+//     color: ${theme.default.COLOR_BLACK};
+//   }
+// `;
 
 class App extends Component {
   constructor() {
@@ -22,7 +53,7 @@ class App extends Component {
 
     Promise.all([new FontFaceObserver('Lato')])
       .then(() => {
-        document.documentElement.classList.add(theme.LOADED_CLASS);
+        document.documentElement.classList.add(FONT_LOADED_CLASS);
       })
       .catch(err => {
         // console.error('Failed to load fonts!', err);
@@ -31,15 +62,9 @@ class App extends Component {
 
   render() {
     return (
-      <Wrapper>
-        {skipLinks.map((item, index) => (
-          <SkipLink key={`skip${index.toString()}`} label={item.title} target={item.target} />
-        ))}
-        <Bar />
-        <Header />
+      <Provider store={store}>
         <Layout />
-        <Footer />
-      </Wrapper>
+      </Provider>
     );
   }
 }
