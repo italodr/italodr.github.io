@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 import Accordion from 'components/Accordion';
 import skills from 'data/skills.json';
-import { space } from 'helpers';
+import { space } from 'styles/mixins';
 
 const Wrapper = styled.ul`
   margin: 0 0 ${space(2)};

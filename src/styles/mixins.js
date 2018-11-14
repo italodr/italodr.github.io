@@ -6,8 +6,8 @@ export const media = {
     @media (min-width: 768px) {
       ${css(...args)};
     }
-  `
+  `,
 };
 
-export const space = n => `${theme.default.FONT_LINEHEIGHT_BASE * n}rem`;
+export const space = (n = 1) => `${theme.default.FONT_LINEHEIGHT_BASE * n}rem`;
 export const pxs = n => theme.default.FONT_SIZE_BASE * n;

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 
 import theme from 'styles/theme.styles';
-import { space } from 'helpers';
+import { space } from 'styles/mixins';
 
 const dotsSize = 8;
 const dotsSpace = `${dotsSize * 2}px`;

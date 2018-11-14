@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 
 import Dots from 'components/Dots';
-import { space } from 'helpers';
+import { space } from 'styles/mixins';
 
 const Wrapper = styled.footer`
   margin: ${space(2)} 0 0;

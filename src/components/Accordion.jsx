@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 
 import theme from 'styles/theme.styles';
-import { space } from 'helpers';
+import { space } from 'styles/mixins';
 
 const AccordionButton = styled.button`
   color: ${theme.default.COLOR_BLACK};
@@ -40,14 +40,14 @@ class Accordion extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      open: false
+      open: false,
     };
     this.toggleAccordion = this.toggleAccordion.bind(this);
   }
 
   toggleAccordion() {
     this.setState({
-      open: !this.state.open
+      open: !this.state.open,
     });
   }
 

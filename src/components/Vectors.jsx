@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 
 import theme from 'styles/theme.styles';
-import { space } from 'helpers';
+import { space } from 'styles/mixins';
 
 const Item = styled.svg.attrs({
   resheight: props => props.size || props.height,

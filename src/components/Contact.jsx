@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 
 import theme from 'styles/theme.styles';
-import { space, pxs } from 'helpers';
+import { space, pxs } from 'styles/mixins';
 
 import Vector from 'components/Vectors';
 
